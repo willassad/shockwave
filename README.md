@@ -1,2 +1,2 @@
 # shockwave
-A cryptocurrency made in python
+A cryptocurrency made in python.
