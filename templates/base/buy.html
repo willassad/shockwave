@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  </br>
+  </br>
+  </br>
+  <h1>BUY SHOCKWAVE</h1>
+  {% include 'includes/_messages.html' %}
+  <p>Your current balance is {{session.get('balance')}} SHK</p>
+  {% from "includes/_formhelpers.html" import render_field %}
+  <form method="POST" action="">
+    <div class="from-group">
+      {{render_field(form.amount, class_="form-control")}}
+    </div>
+    <div class="from-group">
+      {{render_field(form.key, class_="form-control")}}
+    </div>
+    </br>
+    <p><input type="submit" class="btn btn-primary" value="Buy Now"></p>
+  </form>
+{% endblock %}
