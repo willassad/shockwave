@@ -7,13 +7,34 @@ To get started simply download this repository.
 From the command line:
 
 ```
-git clone https://github.com/willassad/shockwave
+$ git clone https://github.com/willassad/shockwave
 ```
 
-Once downloaded, you can run shockwave.py and get started!
+Once downloaded, switch into the source folder and run app.py
+```
+$ python app.py
+```
+Shockwave cryptocurrency is now up and running!
 
 # Prerequisites
-Make sure you have Python 3 installed. Make sure you have mysql and create a database 'shockwave'. 
+Make sure you have Python 3 installed. Install the following dependencies.
+```
+$ pip install Flask
+$ pip install simplecrypt
+$ pip install passlib
+$ pip install flask_mysqldb
+$ pip install functools
+$ pip install wtforms
+```
+Make sure you have mysql (if you don't click here: https://www.youtube.com/watch?v=UcpHkYfWarM). 
+
+Create a database 'shockwave' in mysql.
+```
+mysql> CREATE DATABASE shockwave;
+mysql> use shockwave;
+mysql> CREATE TABLE users(name varchar(30), email varchar(30), username varchar(20), password varchar(50));
+mysql> CREATE TABLE blockchain(number varchar(30), hash varchar(68), previous varchar(68), data varchar(100), nonce varchar(30));
+```
 
 # Built With
 HTML - Front end web framework
