@@ -16,7 +16,10 @@ Once downloaded, you can run shockwave.py and get started!
 Make sure you have Python 2 or Python 3. This was written in Python 2.7. You can download Wing 101 here: https://wingware.com/downloads/wing-101/5.0.9.1/binaries
 
 # Built With
-Python - The entire project
+HTML - Front end web framework
+CSS - Front end styling
+JS - Backend framework
+Python - Backend application
 
 # Authors
 Will Assad - Entire Project
