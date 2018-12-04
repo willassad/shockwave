@@ -1,7 +1,7 @@
 # Shockwave
-Shockwave is a cryptocurrency made in python. It also contains a user interface where one can send money, deposit money, and view their current balance. Sending money will upddate the blockchain and send an email to the one receiving money with a special access code. They can then deposit the money received through the access code and view their new balance.
+Shockwave is a cryptocurrency made in python. It also contains a user interface where one can send money, deposit money, and view their current balance. Shockwave uses crytography (see blockchain.py) to send and verify transactions. Sending money will update the blockchain and each user's balances.
 
-# Getting Started
+## Getting Started
 To get started simply download this repository.
 
 From the command line:
@@ -16,7 +16,7 @@ $ python app.py
 ```
 Shockwave cryptocurrency is now up and running!
 
-# Prerequisites
+## Prerequisites
 Make sure you have Python 3 installed. Install the following dependencies.
 ```
 $ pip install Flask
@@ -36,7 +36,7 @@ mysql> CREATE TABLE users(name varchar(30), email varchar(30), username varchar(
 mysql> CREATE TABLE blockchain(number varchar(30), hash varchar(68), previous varchar(68), data varchar(100), nonce varchar(30));
 ```
 
-# Built With
+## Built With
 HTML - Front end web framework
 
 CSS - Front end styling
@@ -46,8 +46,8 @@ JS - Backend framework
 Python - Backend application
 
 
-# Authors
+## Authors
 Will Assad - Entire Project
 
-# License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details
