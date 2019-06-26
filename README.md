@@ -26,15 +26,30 @@ $ pip install flask_mysqldb
 $ pip install functools
 $ pip install wtforms
 ```
-Make sure you have mysql (if you don't click here: https://www.youtube.com/watch?v=UcpHkYfWarM). 
 
-Create a database 'shockwave' in mysql.
+### Install mySQL
+*Install mySQL prior to intalling flask_mysqldb
+```$ brew install mysql ```
+
+```$ brew tap homebrew/services ```
+```$ brew services start mysql ```
+```$ mysqladmin -u root password 'yourpassword' ```
+
+
+```$ mysql -u root -p```
+``` ... ```
 ```
 mysql> CREATE DATABASE shockwave;
 mysql> use shockwave;
 mysql> CREATE TABLE users(name varchar(30), email varchar(30), username varchar(20), password varchar(50));
 mysql> CREATE TABLE blockchain(number varchar(30), hash varchar(68), previous varchar(68), data varchar(100), nonce varchar(30));
 ```
+
+
+// Make sure you have mysql (if you don't click here: https://www.youtube.com/watch?v=UcpHkYfWarM). 
+
+Create a database 'shockwave' in mysql.
+
 
 ## Built With
 HTML - Front end web framework
