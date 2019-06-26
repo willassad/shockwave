@@ -20,7 +20,7 @@ Shockwave cryptocurrency is now up and running!
 Make sure you have Python 3 installed. Install the following dependencies.
 ```
 $ pip install Flask
-$ pip install simplecrypt
+$ pip install simple-crypt
 $ pip install passlib
 $ pip install flask_mysqldb
 $ pip install functools
