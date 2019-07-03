@@ -18,18 +18,9 @@ $ python app.py
 Shockwave cryptocurrency is now up and running!
 
 ## Prerequisites
-Make sure you have Python 3 installed. Install the following dependencies.
-```
-$ pip install Flask
-  pip install simple-crypt
-  pip install passlib
-  pip install flask_mysqldb #mySql must be installed, see below
-  pip install functools
-  pip install wtforms
-```
 
 ### Install mySQL
-Note: mySQL must be installed prior to flask_mysqldb
+Note: You may skip this if you already have mySQL installed
 ```
 $ brew install mysql 
 $ brew tap homebrew/services
@@ -53,6 +44,16 @@ mysql>
 If you are having troubles install mySql, you may use the link below. 
 https://www.youtube.com/watch?v=UcpHkYfWarM 
 
+### Dependencies
+Make sure you have Python 3 installed. Install the following dependencies.
+```
+$ pip install Flask
+  pip install simple-crypt
+  pip install passlib
+  pip install flask_mysqldb #mySql must be installed, see below
+  pip install functools
+  pip install wtforms
+```
 
 ## Built With
 HTML - Front end web framework
