@@ -22,7 +22,7 @@ Make sure you have Python 3 installed. Install the following dependencies.
 $ pip install Flask
 $ pip install simple-crypt
 $ pip install passlib
-$ pip install flask_mysqldb (mySql must be installed, see below)
+$ pip install flask_mysqldb #mySql must be installed, see below
 $ pip install functools
 $ pip install wtforms
 ```
