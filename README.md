@@ -36,8 +36,9 @@ $ brew services start mysql
 $ mysqladmin -u root password 'yourpassword' 
 ```
 
+Start mySql session in terminal
 
-```$ mysql -u root -p``` Starts mySql session in terminal
+```$ mysql -u root -p```: 
 
 #### Create database and tables
 ``` 
@@ -48,10 +49,8 @@ mysql>
        CREATE TABLE blockchain(number varchar(30), hash varchar(68), previous varchar(68), data varchar(100), nonce varchar(30));
 ```
 
-
-// Make sure you have mysql (if you don't click here: https://www.youtube.com/watch?v=UcpHkYfWarM). 
-
-Create a database 'shockwave' in mysql.
+If you are having troubles install mySql, you may use the link below. 
+https://www.youtube.com/watch?v=UcpHkYfWarM 
 
 
 ## Built With
@@ -66,7 +65,9 @@ Python - Backend application
 
 ## Authors
 Will Assad - Entire Project
-Devansh Kaloti - Installation
+
+Devansh Kaloti - Installation Process
+
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details
