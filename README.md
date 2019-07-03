@@ -28,21 +28,24 @@ $ pip install wtforms
 ```
 
 ### Install mySQL
-*Install mySQL prior to intalling flask_mysqldb
-```$ brew install mysql ```
-
-```$ brew tap homebrew/services ```
-```$ brew services start mysql ```
-```$ mysqladmin -u root password 'yourpassword' ```
-
-
-```$ mysql -u root -p```
-``` ... ```
+Note: mySQL must be installed prior to flask_mysqldb
 ```
-mysql> CREATE DATABASE shockwave;
-mysql> use shockwave;
-mysql> CREATE TABLE users(name varchar(30), email varchar(30), username varchar(20), password varchar(50));
-mysql> CREATE TABLE blockchain(number varchar(30), hash varchar(68), previous varchar(68), data varchar(100), nonce varchar(30));
+$ brew install mysql 
+$ brew tap homebrew/services
+$ brew services start mysql
+$ mysqladmin -u root password 'yourpassword' 
+```
+
+
+```$ mysql -u root -p``` Starts mySql session in terminal
+
+#### Create database and tables
+``` 
+mysql> 
+       CREATE DATABASE shockwave;
+       use shockwave;
+       CREATE TABLE users(name varchar(30), email varchar(30), username varchar(20), password varchar(50));
+       CREATE TABLE blockchain(number varchar(30), hash varchar(68), previous varchar(68), data varchar(100), nonce varchar(30));
 ```
 
 
@@ -63,6 +66,7 @@ Python - Backend application
 
 ## Authors
 Will Assad - Entire Project
+Devansh Kaloti - Installation
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details
