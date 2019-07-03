@@ -13,7 +13,6 @@ $ git clone https://github.com/willassad/shockwave
 Once downloaded, switch into the source folder and run app.py
 ```
 $ cd shockwave # This may be different for you
-```
 $ python app.py
 ```
 Shockwave cryptocurrency is now up and running!
