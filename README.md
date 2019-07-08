@@ -46,9 +46,18 @@ https://www.youtube.com/watch?v=UcpHkYfWarM
 
 ### Dependencies
 Make sure you have Python 3 installed. Install the following dependencies.
+``` 
+pip3 install -r requirements.txt 
 ```
-$ pip install Flask simple-crypt passlib flask_mysqldb functools wtforms
-#mySql must be installed before install flask_mysqldb, see below 
+
+```  
+# You can also install them manually
+$ pip install Flask
+  pip install simple-crypt
+  pip install passlib
+  pip install flask_mysqldb #mySql must be installed, see below
+  pip install functools
+  pip install wtforms
 ```
 
 ## Built With
