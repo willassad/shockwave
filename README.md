@@ -41,6 +41,9 @@ mysql>
        CREATE TABLE blockchain(number varchar(30), hash varchar(68), previous varchar(68), data varchar(100), nonce varchar(30));
 ```
 
+#### Configure Database Config File
+Update Line 41 in ```app.py``` with the password saved above
+
 If you are having troubles install mySql, you may use the link below. 
 https://www.youtube.com/watch?v=UcpHkYfWarM 
 
@@ -52,6 +55,7 @@ pip3 install -r requirements.txt
 
 ```  
 # You can also install them manually
+
 $ pip install Flask
   pip install simple-crypt
   pip install passlib
