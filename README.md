@@ -12,28 +12,56 @@ $ git clone https://github.com/willassad/shockwave
 
 Once downloaded, switch into the source folder and run app.py
 ```
+$ cd shockwave # This may be different for you
 $ python app.py
 ```
 Shockwave cryptocurrency is now up and running!
 
 ## Prerequisites
-Make sure you have Python 3 installed. Install the following dependencies.
-```
-$ pip install Flask
-$ pip install simplecrypt
-$ pip install passlib
-$ pip install flask_mysqldb
-$ pip install functools
-$ pip install wtforms
-```
-Make sure you have mysql (if you don't click here: https://www.youtube.com/watch?v=UcpHkYfWarM). 
 
-Create a database 'shockwave' in mysql.
+### Install mySQL
+Note: You may skip this if you already have mySQL installed
 ```
-mysql> CREATE DATABASE shockwave;
-mysql> use shockwave;
-mysql> CREATE TABLE users(name varchar(30), email varchar(30), username varchar(20), password varchar(50));
-mysql> CREATE TABLE blockchain(number varchar(30), hash varchar(68), previous varchar(68), data varchar(100), nonce varchar(30));
+$ brew install mysql 
+$ brew tap homebrew/services
+$ brew services start mysql
+$ mysqladmin -u root password 'yourpassword' 
+```
+
+### Configure mySQL 
+Start mySql session in terminal
+```$ mysql -u root -p```
+
+#### Create database and tables
+``` 
+mysql> 
+       CREATE DATABASE shockwave;
+       use shockwave;
+       CREATE TABLE users(name varchar(30), email varchar(30), username varchar(20), password varchar(50));
+       CREATE TABLE blockchain(number varchar(30), hash varchar(68), previous varchar(68), data varchar(100), nonce varchar(30));
+```
+
+#### Configure Database Config File
+Update Line 41 in ```app.py``` with the password saved above
+
+If you are having troubles install mySql, you may use the link below. 
+https://www.youtube.com/watch?v=UcpHkYfWarM 
+
+### Dependencies
+Make sure you have Python 3 installed. Install the following dependencies.
+``` 
+pip3 install -r requirements.txt 
+```
+
+```  
+# You can also install them manually
+
+$ pip install Flask
+  pip install simple-crypt
+  pip install passlib
+  pip install flask_mysqldb #mySql must be installed, see below
+  pip install functools
+  pip install wtforms
 ```
 
 ## Built With
@@ -48,6 +76,9 @@ Python - Backend application
 
 ## Authors
 Will Assad - Entire Project
+
+Devansh Kaloti - Installation Process
+
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details
